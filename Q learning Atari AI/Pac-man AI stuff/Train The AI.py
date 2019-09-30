@@ -6,13 +6,13 @@ import multiprocessing as mp
 import visualize
 
 gym.logger.set_level(40)  # Disable gym warnings
-os.chdir("/Users/paulpage/Desktop/Python Code Projects/Q learning Atari AI/Pac-man AI stuff/checkpoints")  # To store the checkpoints in this folder
+os.chdir("/Q learning Atari AI/Pac-man AI stuff/checkpoints")  # To store the checkpoints in this folder
 
 # Learning Parameters
 NUM_GENERATIONS = 1000
 PARALLEL = 2  # Number of environments to run at once
 ENV = "MsPacman-ram-v0"  # RAM means number of inputs 128
-CONFIG_FILE = "/Users/paulpage/Desktop/Python Code Projects/Q learning Atari AI/Pac-man AI stuff/config"
+CONFIG_FILE = "/Q learning Atari AI/Pac-man AI stuff/config"
 
 
 class Train:
@@ -48,7 +48,7 @@ class Train:
             #    print(f"Genome {index}. Fitness {total_reward}")
 
             if fitness >= 500:
-                pickle.dump(genome, open("/Users/paulpage/Desktop/Python Code Projects/Q learning Atari AI/Pac-man AI stuff/checkpoints/finisher.pkl", "wb"))  # Save a good model just in case of a crash
+                pickle.dump(genome, open("/Q learning Atari AI/Pac-man AI stuff/checkpoints/finisher.pkl", "wb"))  # Save a good model just in case of a crash
 
             env.close()
 
@@ -87,7 +87,7 @@ class Train:
 
         winner = p.run(self._eval_genomes, generations)
 
-        pickle.dump(winner, open('/Users/paulpage/Desktop/Python Code Projects/Q learning Atari AI/Pac-man AI stuff/checkpoints/winner.pkl', 'wb'))
+        pickle.dump(winner, open('/Q learning Atari AI/Pac-man AI stuff/checkpoints/winner.pkl', 'wb'))
 
         visualize.draw_net(config, winner, True)
         visualize.plot_stats(stats, ylog=False, view=True)
