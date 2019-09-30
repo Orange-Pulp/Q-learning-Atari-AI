@@ -12,7 +12,7 @@ os.chdir("/Q learning Atari AI/Pac-man AI stuff/checkpoints")  # To store the ch
 NUM_GENERATIONS = 1000
 PARALLEL = 2  # Number of environments to run at once
 ENV = "MsPacman-ram-v0"  # RAM means number of inputs 128
-CONFIG_FILE = "/Q learning Atari AI/Pac-man AI stuff/config"
+CONFIG_FILE = "/Q learning Atari AI/Pac-man AI stuff/config" #This path will need to be changed for your computer.
 
 
 class Train:
@@ -49,7 +49,7 @@ class Train:
 
             if fitness >= 500:
                 pickle.dump(genome, open("/Q learning Atari AI/Pac-man AI stuff/checkpoints/finisher.pkl", "wb"))  # Save a good model just in case of a crash
-
+#This path will need to be changed for your computer. ^
             env.close()
 
         # To easily stop the training
@@ -88,7 +88,7 @@ class Train:
         winner = p.run(self._eval_genomes, generations)
 
         pickle.dump(winner, open('/Q learning Atari AI/Pac-man AI stuff/checkpoints/winner.pkl', 'wb'))
-
+#This path will need to be changed for your computer. ^
         visualize.draw_net(config, winner, True)
         visualize.plot_stats(stats, ylog=False, view=True)
         visualize.plot_species(stats, view=True)
