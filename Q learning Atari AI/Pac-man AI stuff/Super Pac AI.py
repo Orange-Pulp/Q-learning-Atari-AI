@@ -7,13 +7,13 @@ import visualize
 import time
 
 gym.logger.set_level(40)  # Disable gym warnings
-os.chdir("/Users/paulpage/Desktop/Python Code Projects/Q learning Atari AI/Pac-man AI stuff/checkpoints")  # To store the checkpoints in this folder
+os.chdir("/Q learning Atari AI/Pac-man AI stuff/checkpoints")  # To store the checkpoints in this folder
 
 # Learning Parameters
 NUM_GENERATIONS = 1000
 PARALLEL = 2  # Number of environments to run at once
 ENV = "MsPacman-ram-v0"  # RAM means number of inputs 128
-CONFIG_FILE = "/Users/paulpage/Desktop/Python Code Projects/Q learning Atari AI/Pac-man AI stuff/config"
+CONFIG_FILE = "/Q learning Atari AI/Pac-man AI stuff/config"
 
 env = gym.make(ENV)
 
@@ -21,7 +21,7 @@ config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                      neat.DefaultSpeciesSet, neat.DefaultStagnation,
                      CONFIG_FILE)
 
-genome = pickle.load(open("/Users/paulpage/Desktop/Python Code Projects/Q learning Atari AI/Pac-man AI stuff/checkpoints/winner.pkl", "rb"))
+genome = pickle.load(open("Q learning Atari AI/Pac-man AI stuff/checkpoints/winner.pkl", "rb"))
 fitness = 0
 while fitness < 2000:
     try:
@@ -50,7 +50,7 @@ while fitness < 2000:
         #    print(f"Genome {index}. Fitness {total_reward}")
 
         if fitness >= 500:
-            pickle.dump(genome, open("/Users/paulpage/Desktop/Python Code Projects/Q learning Atari AI/Pac-man AI stuff/checkpoints/finisher.pkl", "wb"))  # Save a good model just in case of a crash
+            pickle.dump(genome, open("/Q learning Atari AI/Pac-man AI stuff/checkpoints/finisher.pkl", "wb"))  # Save a good model just in case of a crash
 
         env.close()
 
