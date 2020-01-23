@@ -10,7 +10,7 @@ this bot starts off moving in random directions and recording any paterns that l
 
 Open-ai gym is the training enviroment that I am using for this project. Gym is a really cool bit of software made with training AI as the main focus. There are over 100 Atari games in gym that this AI can learn to play, and even more things including real world simulations. Here is the github link for getting this up and running https://github.com/openai/gym  
 I also used the scientific computing module numpy  which can be found here https://github.com/numpy/numpy
-And lastly Google's own machine learning library tensorflow, which can be installed here. https://github.com/tensorflow/tensorflow
+     And lastly Google's own machine learning library tensorflow, which can be installed here. https://github.com/tensorflow/tensorflow
 
 
 Of course you can also just type "pip install numpy" or "pip install tensorflow" in a terminal window to install those dependencies.
