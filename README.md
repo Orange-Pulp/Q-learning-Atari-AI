@@ -13,7 +13,7 @@ Open-ai gym is the training enviroment that I am using for this project. Gym is 
 
 
 
-(Dependanciezzz)
+(Dependanciezzz) ▼
 
 Open-AI gym
 (Pip install gym) or   https://github.com/openai/gym
