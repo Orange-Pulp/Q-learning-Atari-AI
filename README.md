@@ -8,15 +8,20 @@ this bot starts off moving in random directions and recording any paterns that l
 
 (Some things on how to go about using it) ▼
 
-Open-ai gym is the training enviroment that I am using for this project. Gym is a really cool bit of software made with training AI as the main focus. There are over 100 Atari games in gym that this AI can learn to play, and even more things including real world simulations. Here is the github link for getting this up and running https://github.com/openai/gym
-
-I also used the scientific computing module numpy which can be found here https://github.com/numpy/numpy
-
-And lastly Google's own machine learning library tensorflow, which can be installed here. https://github.com/tensorflow/tensorflow
+Open-ai gym is the training enviroment that I am using for this project. Gym is a really cool bit of software made with training AI as the main focus. There are over 100 Atari games in gym that this AI can learn to play. This even includes things like real world simulations of car driving and humanoid walking. 
 
 
+(Dependanciezzz)
 
-Of course you can also just type "pip install numpy" or "pip install tensorflow" in a terminal window to install those dependencies.
+Open-AI gym
+(Pip install gym) or   https://github.com/openai/gym
+
+
+Numpy
+(Pip install numpy) or  https://github.com/numpy/numpy
+
+
+And lastly Google's own machine learning library tensorflow.   https://github.com/tensorflow/tensorflow
 
 
 Thanks for reading this and have fun with your Pac-man AI! 
