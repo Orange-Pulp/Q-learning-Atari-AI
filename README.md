@@ -9,7 +9,7 @@ this bot starts off moving in random directions and recording any paterns that l
 
 (Some things on how to go about using it) ▼
 
-Open-ai gym is the training enviroment that I am using for this project. Gym is a really cool bit of software made with training AI as the main focus. There are over 100 Atari games in gym that this AI can learn to play. This even includes things like real world simulations of car driving and humanoid walking. 
+Open-ai gym is the training enviroment that I am using for this project. Gym is a really cool bit of software made with training AI as the main focus. Gym has over 100 Atari games in gym that this AI can learn to play. And it's library even includes things like real world simulations of car driving and humanoid walking. 
 
 
 
