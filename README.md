@@ -9,7 +9,7 @@ this bot starts off making random moves with no knowledge of how to play the gam
 (Some things on how to go about using it) ▼
 
 This should work with any up to date version of open AI Gym. However, This Bot was built and optimized for tensorflow 1.15.0 
-and may not work with some builds of tensorflow 2.0.
+and may not work with some builds of tensorflow 2.0. I reccomend using a docker file or virtual enviroment if you regularly use tensorflow 2.
 
 
 
