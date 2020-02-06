@@ -3,13 +3,13 @@
 (Some stuff about Q-learning and how this bot works) ▼
 
 This is an AI that can learn to play MS Pac-man using Open-AI gym and Q-learning! The idea of Q-learning is fairly simple, 
-this bot starts off moving in random directions and recording any paterns that lead to success, (large or small). If it makes a move that allows it to get more points or live longer, it will remeber it and have a much higher probability of repeating that move in the future. The great thing about Q-learning is that it can be applied to almost anything. There are hundereds of games in Open-ai gym that this bot can learn to play, so I invite you to experiment with it.
-
+this bot starts off making random moves with no knowledge of how to play the game. It is simply told to maximize a reward value called a "Q value". The better the bot plays the game the more reward it gets. The great thing about Q-learning is that it can be applied to almost anything. There are hundereds of games in Open-ai gym that this bot can learn to play, so I invite you to experiment with it.
 
 
 (Some things on how to go about using it) ▼
 
-Open-ai gym is the training enviroment that I am using for this project. Gym is a really cool bit of software made with training AI as the main focus. Gym has over 100 Atari games in gym that this AI can learn to play. And it's library even includes things like real world simulations of car driving and humanoid walking. 
+This should work with any up to date version of open AI Gym. However, This Bot was built and optimized for tensorflow 1.15.0 
+and may not work with some builds of tensorflow 2.0.
 
 
 
