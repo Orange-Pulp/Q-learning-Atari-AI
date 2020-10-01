@@ -2,7 +2,7 @@
 
 (Game library) ▼
 
-You can change the game this AI plays by going to line 74 and changing the gym.make variable to any other game in the Open-AI gym library. Here is a link to all of the games.      https://gym.openai.com/envs/#atari
+You can change the game this AI plays by going to line 74 and changing the gym.make variable to any other game in the Open-AI gym library. Here is a link to all of the games. (Note some work better then others with this specific learning algorithm).  https://gym.openai.com/envs/#atari
 
 
 
