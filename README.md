@@ -8,7 +8,7 @@ You can change the game this AI learns by going to line 74 and changing the gym.
 
 (Working enviroment ▼)
 
-This project was built with slightly older syntax from tensorflow 1.15.0 and may not work with some builds of tensorflow 2.0. I reccomend using a docker file or virtual enviroment if you regularly use tensorflow 2.
+This project was built with slightly older syntax from tensorflow 1.14.0-1.15.0 and may not work with some builds of tensorflow 2.0. I reccomend using a docker file or virtual enviroment if you regularly use tensorflow 2.
 
 
 
